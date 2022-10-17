@@ -177,9 +177,7 @@ async function main() {
                      `hours (${(timeInactiveInHours/24).toFixed(2)} days) ` +
                      `and will be unassigned after ${willBeUnassignedInHours} ` +
                      `more hours (${(willBeUnassignedInHours/24).toFixed(2)} days). ` +
-                     `If you have questions, please visit the #casa channel in slack during ` + 
-                     `${officeHours}`+ `. ` + 
-                     `Link: https://rubyforgood.herokuapp.com/ \n\n` + 
+                     `If you have questions, you can send an email to coreteam@codethesaur.us\n\n` + 
                      `${warningInactiveMessage}`;
         try {
           await octokit.issues.createComment({

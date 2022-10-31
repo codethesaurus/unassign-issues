@@ -1,21 +1,21 @@
 {
   "name": "unassign-issues",
   "version": "1.0.0",
-  "description": "",
+  "description": "A bot to warn then unassign users when an assigned issue hasn't been worked on",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bjthompson805/unassign-issues.git"
+    "url": "git+https://github.com/codethesaurus/unassign-issues.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bjthompson805/unassign-issues/issues"
+    "url": "https://github.com/codethesaurus/unassign-issues/issues"
   },
-  "homepage": "https://github.com/bjthompson805/unassign-issues#readme",
+  "homepage": "https://github.com/codethesaurus/unassign-issues#readme",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0"

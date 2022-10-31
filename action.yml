@@ -8,11 +8,11 @@ inputs:
   unassign_inactive_in_hours:
     description: 'Number of hours to wait before unassigning an issue'
     required: false
-    default: 168 # 7 days
+    default: 336 # 7 days
   unassign_inactive_message:
     description: 'Message posted on issue when unassigning'
     required: false
-    default: "You’ve just been unassigned from this ticket due to inactivity – but feel free to pick it back up (or a new one!) in the future! Thank you again for your contribution to this project."
+    default: "You’ve just been unassigned from this ticket due to inactivity – but feel free to pick it back up (or a new one!) in the future! Thank you for your interest in contributing to this project."
   warning_inactive_in_hours:
     description: 'Number of hours to wait before posting a warning message in an issue'
     required: false
@@ -21,10 +21,10 @@ inputs:
     description: 'Message posted on issue as unassign warning'
     required: false
     default: "Thanks for picking up this issue and supporting this project! It looks like there hasn’t been any activity on this ticket in a while. To keep things moving, you will be unassigned from this issue soon if there’s no new activity on it by then. But we encourage you to pick this issue (or a new one) back up in the future!"
-  office_hours:
-    description: 'Slack office hours included in warning or unassign message'
-    required: false
-    default: ''
+#  office_hours:
+#    description: 'Slack office hours included in warning or unassign message'
+#    required: false
+#    default: ''
 runs:
   using: 'node12'
   main: 'index.js'

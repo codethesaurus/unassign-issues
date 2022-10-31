@@ -5,7 +5,7 @@ const unassignInactiveInHours = core.getInput('unassign_inactive_in_hours');
 const unassignInactiveMessage = core.getInput('unassign_inactive_message');
 const warningInactiveInHours = core.getInput('warning_inactive_in_hours');
 const warningInactiveMessage = core.getInput('warning_inactive_message');
-const officeHours = core.getInput('office_hours');
+// const officeHours = core.getInput('office_hours');
 const repoOwner = github.context.repo.owner;
 const repo = github.context.repo.repo;
 const octokit = github.getOctokit(token);
@@ -177,9 +177,10 @@ async function main() {
                      `hours (${(timeInactiveInHours/24).toFixed(2)} days) ` +
                      `and will be unassigned after ${willBeUnassignedInHours} ` +
                      `more hours (${(willBeUnassignedInHours/24).toFixed(2)} days). ` +
-                     `If you have questions, please visit the #casa channel in slack during ` + 
-                     `${officeHours}`+ `. ` + 
-                     `Link: https://rubyforgood.herokuapp.com/ \n\n` + 
+                     `If you have questions, please leave a comment, message ` +
+                     `[@codethesaurus](https://twitter.com/codethesaurus) ` +
+                     `or [@geekygirlsarah](https://twitter.com/geekygirlsarah)  ` +
+                     `on Twitter, or email [coreteam@codethesaur.us](coreteam@codethesaur.us).` +
                      `${warningInactiveMessage}`;
         try {
           await octokit.issues.createComment({
